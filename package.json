@@ -1,0 +1,32 @@
+{
+  "name": "zoo",
+  "version": "1.0.0",
+  "description": "Zoo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node src/index.ts --extensions \".ts\"",
+    "tsc": "tsc --noEmit",
+    "dev": "nodemon",
+    "build": "npm run tsc && babel src -d dist --extensions \".ts\""
+  },
+  "author": "Talwinder Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/mongodb": "^3.6.11",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
